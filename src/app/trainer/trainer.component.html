@@ -1,0 +1,20 @@
+<div class="text-white" align="center">
+<h1 class="p-3 mb-2 bg-dark" style="opacity: 0.7;">Meet your trainer</h1>
+<p class="p-3 mb-2 bg-dark" style="opacity: 0.7;">Here is a table of our personal trainer's names and specialties</p>
+</div>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">nombre</th>
+      <th scope="col">specialty</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let trainer of trainers" >
+      <th>{{trainer.id}}</th>
+      <td>{{trainer.nombre}}</td>
+      <td>{{trainer.specialty}}</td>
+    </tr>
+  </tbody>
+</table>
